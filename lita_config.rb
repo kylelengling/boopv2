@@ -17,9 +17,9 @@ Lita.configure do |config|
 
   # The adapter you want to connect with. Make sure you've added the
   # appropriate gem to the Gemfile.
-  config.robot.adapter = :shell
+  config.robot.adapter = :slack
   config.adapters.slack.token = "xoxb-19129708706-BT1z44gsa2FqtDq7GARB3yqC"
-
+  config.handlers.weather.api_key = ENV["WEATHER_API_KEY"]
   ## Example: Set options for the chosen adapter.
   # config.adapter.username = "myname"
   # config.adapter.password = "secret"
